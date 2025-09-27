@@ -200,7 +200,7 @@ export function ContactSection() {
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
                   <div>
-                    <div className="font-medium text-card-foreground">aochuba52@gmail.com</div>
+                    <div className="font-medium text-card-foreground">srijitd248@gmail.com</div>
                     <div className="text-sm text-muted-foreground">General inquiries</div>
                   </div>
                 </div>

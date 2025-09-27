@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Create transporter using Gmail SMTP with app password
-    const hostEmail = process.env.HOST_EMAIL || 'aochuba52@gmail.com'
+    const hostEmail = process.env.HOST_EMAIL || 'srijitd248@gmail.com'
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -234,7 +234,7 @@ The file is attached to this email and can be downloaded.
     // Prepare email options
     const mailOptions: any = {
       from: `"Aquanautical Platform" <${hostEmail}>`,
-      to: 'aochuba52@gmail.com',
+      to: 'srijitd248@gmail.com',
       replyTo: replyTo, // Allow direct reply to the sender
       subject: subject,
       text: textContent,
@@ -253,7 +253,7 @@ The file is attached to this email and can be downloaded.
 
     await transporter.sendMail(mailOptions)
     
-    console.log("Email sent successfully to aochuba52@gmail.com")
+    console.log("Email sent successfully to srijitd248@gmail.com")
 
     return NextResponse.json({ 
       message: "Message sent successfully! We'll get back to you soon.",
